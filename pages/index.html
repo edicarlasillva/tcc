@@ -11,191 +11,238 @@
   <!-- Add main style -->
   <link rel="stylesheet" href="../src/assets/css/style.css">
   <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
   <!-- Fontawesome -->
   <link rel="stylesheet" href="../src/vendor/fontawesome/css/all.css">
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      Repositório UFBA
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+  <div class="home container-fluid">
+    <div class="row">
+      <aside class="col-md-3  pl-0 pr-0">
+        <div class="aside--home">
+          <div class="logo--home">
+            <a href="">
+              <img src="../src/assets/images/logo.svg" alt="">
+            </a>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <!-- Search box -->
-  <header id="header-inner" class="bg-blue search-box article-header">
-    <div class="container py-4">
-      <div class="row flex-lg flex-lg-middle">
-        <div class="col-md-12">
-          <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="" accept-charset="UTF-8" method="get">
-            <input name="utf8" type="hidden" value="✓"><input type="search" name="query" class="query" placeholder="Busque um novo projeto no repositório." autocomplete="off" aria-label="Type here...">
-            <button class="btn btn-lg btn-primary" type="submit"><i class="far fa-search"></i></button>
-          </form>
         </div>
-      </div>
-    </div>
-  </header>
-  <!-- Breadcrumb -->
-  <nav aria-label="breadcrumb">
-    <div class="background-breadcrumb">
-      <div class="container">
-        <ol class="breadcrumb pl-0">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Search</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Palavra pesquisada</li>
-        </ol>
-      </div>
-    </div>
-  </nav>
-  <section class="section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <ul class="filter">
-            <li class="filter-item">
-              <form role="search" action="">
-                <div class="search-form">
-                  <input type="search" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" class="ais-input" placeholder="O que você está procurando?" autofocus="autofocus">
-                </div>
-              </form>
-            </li>
-            <li class="filter-item">
-              <h4>LINGUAGEM</h4>
-              <div class="filter-list-item">
-                <label class="ais-refinement-list__label">
-                  <input type="checkbox" class="filter-list-checkbox" value="episode">
-                  <span class="filter-list-value">Javascript</span>
-                </label>
-              </div>
-              <div class="filter-list-item">
-                <label class="ais-refinement-list__label">
-                  <input type="checkbox" class="filter-list-checkbox" value="episode">
-                  <span class="filter-list-value">PHP</span>
-                </label>
-              </div>
-              <div class="filter-list-item">
-                <label class="ais-refinement-list__label">
-                  <input type="checkbox" class="filter-list-checkbox" value="episode">
-                  <span class="filter-list-value">Java</span>
-                </label>
-              </div>
-            </li>
-            <li class="filter-item">
-              <h4>TAGS</h4>
-              <div class="filter-list-item">
-                <label class="ais-refinement-list__label">
-                  <input type="checkbox" class="filter-list-checkbox" value="episode">
-                  <span class="filter-list-value">Code editor</span>
-                </label>
-              </div>
-              <div class="filter-list-item">
-                <label class="ais-refinement-list__label">
-                  <input type="checkbox" class="filter-list-checkbox" value="episode">
-                  <span class="filter-list-value">Css</span>
-                </label>
-              </div>
-              <div class="filter-list-item">
-                <label class="ais-refinement-list__label">
-                  <input type="checkbox" class="filter-list-checkbox" value="episode">
-                  <span class="filter-list-value">Front-end</span>
-                </label>
-              </div>
-            </li>
-          </ul>
+        <div class="asideCreate">
+          <div class="asideCreate__main  p-4">
+            <h3>Deseja submeter um projeto?</h3>
+            <input type="text" name="" value="" placeholder="Comece digitanto o título.">
+          </div>
+          <div class="btnSubmeterAside">
+            <button type="button" name="button">Submeter</button>
+          </div>
         </div>
-        <div class="col-md-9">
-          <div class="row align-vertical-center">
-            <div class="col-md-8">
-              <div class="project-list-details">
-                <p class="project-list-meta">
-                  <a href="#" class="text-grey-dark">
-                    Trabalho de conclusão de curso
-                  </a>
-                </p>
-                <div class="tw-flex tw-items-center tw-mb-3">
-                  <h4 class="project-list-title">
-                    <a href="#" class="text-dark">
-                      Automatic Policy Discovery
-                    </a>
-                  </h4>
+      </aside>
+      <article class="col-md-9 p-0">
+        <header class="header--home">
+          <div class="header__top pb-0">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+              <div class="container-fluid p-0"><a href="#" class="navbar-brand">
+                  <h2>
+                    <span>Git</span>up
+                  </h2>
+                </a>
+                <div class="d-flex ml-auto">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNavbar" aria-controls="globalNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 </div>
-                <div class="episode-list-excerpt md:tw-block md:tw-pr-10 generic-content mobile:tw-text-black">
-                  <p>Odd behavior that could be coming from the not doing it correctly place. I'm also not sure what all information would help keep this succinct yet cover the issue - updates</p>
+                <div class="collapse navbar-collapse" id="globalNavbar">
+                  <ul class="navbar-nav mr-auto order-1">
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre o repositório</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
+                  </ul>
+                  <ul class="navbar-nav d-none d-lg-flex ml-2 order-3">
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fal fa-bell notify"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cadastre-se</a></li>
+                  </ul>
+                  <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item-divider"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Submeter projeto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cadastre-se</a></li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="button-language">
-                <a href="#" class="is-javascript">Javascript</a>
+            </nav>
+            <p class="mb-0 mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit sed magna quis rhoncus. Vestibulum vitae arcu eu felis auctor malesuada euismod ac lectus. Praesent suscipit, turpis a hendrerit condimentum, nisl nisl vestibulum mauris, eu malesuada ex libero sit amet lorem. Morbi dapibus lacus vel rhoncus semper. Nullam quis risus volutpat, rhoncus elit ac, vestibulum dolor.
+            </p>
+          </div>
+          <div class="search card">
+            <div class="row">
+              <div class="search__icon ">
+                <i class="fal fa-search"></i>
+              </div>
+              <input type="text" class="" placeholder="Buscar no Gitup...">
+              <div class="search__filter">
+                <div class="dropdown dropleft">
+                  <button class="btn btn-secondary dropdown-toggle btn-filter" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Filtrar por
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Linguagem</button>
+                    <button class="dropdown-item" type="button">Categoria</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row align-vertical-center">
-            <div class="col-md-8">
-              <div class="project-list-details">
-                <p class="project-list-meta">
-                  <a href="#" class="text-grey-dark">
-                    Trabalho de conclusão de curso
-                  </a>
-                </p>
-                <div class="tw-flex tw-items-center tw-mb-3">
-                  <h4 class="project-list-title">
-                    <a href="#" class="text-dark">
-                      Automatic Policy Discovery
-                    </a>
-                  </h4>
-                </div>
-                <div class="episode-list-excerpt md:tw-block md:tw-pr-10 generic-content mobile:tw-text-black">
-                  <p>Odd behavior that could be coming from the not doing it correctly place. I'm also not sure what all information would help keep this succinct yet cover the issue - updates</p>
+        </header>
+        <section class="lastProjectHome">
+          <h2 class="lastProjectHome__h2">Últimos Projetos</h2>
+          <div class="lastProjectHome__allBoxes row">
+            <div class="lastProjectHome__boxe col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <span class="programming-language">Python</span>
+                  <div class="card-body-main">
+                    <h5 class="card-title"><a href="">Titulo do Projeto vai estar aqui</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>
+                    <div class="keyWords">
+                      <div class="keyWords__item"><a href="">Ontologia</a></div>
+                      <div class="keyWords__item"><a href="">RDF</a></div>
+                      <div class="keyWords__item"><a href="">Web Semântica</a></div>
+                      <div class="keyWords__item"><a href="">OWL</a></div>
+                    </div>
+                  </div>
+                  <footer class="footerMeta">
+                    <div class="allIcons">
+                      <div class="footerMeta__icon">
+                        <a href="">
+                          <i class="fal fa-heart"></i>
+                          <span>21</span>
+                        </a>
+                      </div>
+                      <div class="footerMeta__icon">
+                        <i class="fal fa-eye"></i>
+                        <span>53</span>
+                      </div>
+                    </div>
+                    <div class="footerMeta__viewMore">
+                      <a href="#">Veja Mais</a>
+                    </div>
+                  </footer>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="button-language">
-                <a href="#" class="is-javascript">Javascript</a>
+            <div class="lastProjectHome__boxe col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <span class="programming-language">Java</span>
+                  <div class="card-body-main">
+                    <h5 class="card-title"><a href="">Titulo do Projeto vai estar aqui</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>
+                    <div class="keyWords">
+                      <div class="keyWords__item"><a href="">Ontologia</a></div>
+                      <div class="keyWords__item"><a href="">RDF</a></div>
+                      <div class="keyWords__item"><a href="">Web Semântica</a></div>
+                      <div class="keyWords__item"><a href="">OWL</a></div>
+                    </div>
+                  </div>
+                  <footer class="footerMeta">
+                    <div class="allIcons">
+                      <div class="footerMeta__icon">
+                        <a href="">
+                          <i class="fal fa-heart"></i>
+                          <span>21</span>
+                        </a>
+                      </div>
+                      <div class="footerMeta__icon">
+                        <i class="fal fa-eye"></i>
+                        <span>53</span>
+                      </div>
+                    </div>
+                    <div class="footerMeta__viewMore">
+                      <a href="#">Veja Mais</a>
+                    </div>
+                  </footer>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="lastProjectHome__boxe col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <span class="programming-language">PHP</span>
+                  <div class="card-body-main">
+                    <h5 class="card-title"><a href="">Titulo do Projeto vai estar aqui</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>
+                    <div class="keyWords">
+                      <div class="keyWords__item"><a href="">Ontologia</a></div>
+                      <div class="keyWords__item"><a href="">RDF</a></div>
+                      <div class="keyWords__item"><a href="">Web Semântica</a></div>
+                      <div class="keyWords__item"><a href="">OWL</a></div>
+                    </div>
+                  </div>
+                  <footer class="footerMeta">
+                    <div class="allIcons">
+                      <div class="footerMeta__icon">
+                        <a href="">
+                          <i class="fal fa-heart"></i>
+                          <span>21</span>
+                        </a>
+                      </div>
+                      <div class="footerMeta__icon">
+                        <i class="fal fa-eye"></i>
+                        <span>53</span>
+                      </div>
+                    </div>
+                    <div class="footerMeta__viewMore">
+                      <a href="#">Veja Mais</a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+            <div class="lastProjectHome__boxe col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <span class="programming-language">Ruby</span>
+                  <div class="card-body-main">
+                    <h5 class="card-title"><a href="">Titulo do Projeto vai estar aqui</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>
+                    <div class="keyWords">
+                      <div class="keyWords__item"><a href="">Ontologia</a></div>
+                      <div class="keyWords__item"><a href="">RDF</a></div>
+                      <div class="keyWords__item"><a href="">Web Semântica</a></div>
+                      <div class="keyWords__item"><a href="">OWL</a></div>
+                    </div>
+                  </div>
+                  <footer class="footerMeta">
+                    <div class="allIcons">
+                      <div class="footerMeta__icon">
+                        <a href="">
+                          <i class="fal fa-heart"></i>
+                          <span>21</span>
+                        </a>
+                      </div>
+                      <div class="footerMeta__icon">
+                        <i class="fal fa-eye"></i>
+                        <span>53</span>
+                      </div>
+                    </div>
+                    <div class="footerMeta__viewMore">
+                      <a href="#">Veja Mais</a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+        </section>
+      </article>
     </div>
-  </section>
-  <!-- Add JQuery -->
-  <script src="../src/vendor/js/jquery-3.3.1.slim.min.js"></script>
-  <!-- Add js Bootstrap -->
-  <script src="../src/vendor/js/bootstrap.min.js"></script>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

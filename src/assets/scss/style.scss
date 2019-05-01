@@ -261,6 +261,8 @@ button.navbar-toggler {
       margin-top: 25px;
 
       .lastProjectHome__boxe {
+        margin: 15px 0;
+
         .card {
           -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
           -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
@@ -353,6 +355,30 @@ button.navbar-toggler {
             }
           }
         }
+      }
+    }
+  }
+}
+/*------------------------------------*\
+  Search filter
+\*------------------------------------*/
+.filter {
+  .filterWords__item {
+    color: #262740;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: rgba(38,39,64,.2);
+    display: inline;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 2px;
+
+    a {
+      color: #262740;
+      padding-left: 5px;
+
+      &:hover {
+        text-decoration: none;
       }
     }
   }
